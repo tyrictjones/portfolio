@@ -41,7 +41,6 @@ header h1 {
 
 header nav ul {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     list-style: none;
     font-size: 30px;
@@ -152,6 +151,42 @@ header img {
     color: white;
 }
 
-/*******************PROJECTS***********************/
+/*******************MEDIA QUERIES***********************/
+/* tablets and larger */
+@media screen and (min-width: 575px) {
+    .section-title {
+        width: 40%;
+        font-size: 40px;
+    }
+    
+    .about p {
+        width: 80%;
+    }
 
+    .main-project img, .project img {
+        border: 5px solid #3be3a3;
+    }
+}
 
+/* small desktops and larger */
+@media screen and (min-width: 975px) {
+    header nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contact ul {
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 30px;
+    }
+
+    .projects {
+        width: 75%;
+    }
+
+    .main-project img:hover, .project img:hover {
+        opacity: 0.75;
+    }
+
+}
