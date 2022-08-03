@@ -9,6 +9,18 @@ body {
     background-color: #162d94;
 }
 
+.section-title {
+    padding: 10px;
+    margin: 0 auto 30px auto;
+    font-size: 30px;
+    border-bottom: 2px solid white;
+    width: 40%;
+    text-align: center;
+    color: white;
+}
+
+/*******************HEADER***********************/
+
 header, section {
     padding: 20px;
 }
@@ -30,7 +42,7 @@ header h1 {
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     list-style: none;
     font-size: 30px;
 }
@@ -62,46 +74,23 @@ header img {
     margin: 20px;
 }
 
-.section-title {
-    padding: 10px;
-    margin: 0 auto 20px auto;
-    font-size: 40px;
-    border-bottom: 2px solid white;
-    width: 40%;
-    text-align: center;
-    color: white;
-}
+/*******************ABOUT***********************/
 
 .about p {
     color: #3be3a3;
-    width: 50%;
+    width: 100%;
     text-align: center;
     font-size: 20px;
     line-height: 1.5;
-}
-
-
-/*
-.hero {
-    background-image: url("../images/hero-bg.jpg");
-    height: 40vh;
-    background-position: top;
-    background-size: cover;
-    position: relative;
-}
-*/
-
-
-.about p {
-    width: 50%;
     margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+    padding: 10px;
 }
+
+/*******************PROJECTS***********************/
 
 .projects {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -110,18 +99,20 @@ header img {
 
 .main-project img, .project img {
     max-width: 100%;
-    border: 5px solid #3be3a3;
+    border: 3px solid #3be3a3;
     border-radius: 0 10px 10px 10px;
 }
 
 .main-project {
-    max-width: 75%;
-    flex: 2 75%;
+    max-width: 100%;
+    flex: 2 100%;
+    margin: 0 0 40px 0;
 }
 
 .project {
-    max-width: 30%;
-    flex: 1 30%;
+    max-width: 40%;
+    flex: 1 40%;
+    margin: 0 0 20px 0;
 }
 
 .project-head {
@@ -131,6 +122,8 @@ header img {
     padding: 10px;
     border-radius: 10px 10px 0 0;
 }
+
+/*******************PROJECTS***********************/
 
 .contact ul {
     display: flex;
@@ -157,4 +150,7 @@ header img {
 .contact ul li:hover, .contact a:hover {
     color: white;
 }
+
+/*******************PROJECTS***********************/
+
 
