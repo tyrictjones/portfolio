@@ -15,11 +15,11 @@ body {
 }
 
 .section-title {
-    padding: 10px;
+    padding: 10px 40px;
     margin: 0 auto 30px auto;
     font-size: 30px;
     border-bottom: 2px solid white;
-    width: 60%;
+    width: fit-content;
     text-align: center;
     color: white;
 }
@@ -80,7 +80,7 @@ header img {
 
 /*******************ABOUT***********************/
 
-.about p {
+.about-text p {
     color: var(--secondary-color);
     width: 100%;
     text-align: center;
@@ -157,11 +157,11 @@ header img {
 /* tablets and larger */
 @media screen and (min-width: 575px) {
     .section-title {
-        width: 40%;
         font-size: 40px;
+        width: fit-content;
     }
     
-    .about p {
+    .about-text p {
         width: 80%;
     }
 
@@ -175,12 +175,6 @@ header img {
     header nav ul {
         flex-direction: row;
         justify-content: space-around;
-    }
-
-    .contact ul {
-        flex-direction: row;
-        justify-content: space-around;
-        font-size: 30px;
     }
 
     .projects {
@@ -200,6 +194,12 @@ header img {
 
     .main-project img:hover, .project img:hover {
         opacity: 0.75;
+    }
+    
+    .contact ul {
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 30px;
     }
 
 }
