@@ -156,10 +156,6 @@ header img {
 /*******************MEDIA QUERIES***********************/
 /* tablets and larger */
 @media screen and (min-width: 575px) {
-    .section-title {
-        font-size: 40px;
-        width: fit-content;
-    }
     
     .about-text p {
         width: 80%;
@@ -183,8 +179,24 @@ header img {
         justify-content: space-around;
     }
 
-    .projects {
+    .section-title {
+        border-bottom: none;
+        border-right: 5px solid white;
+        width: 25%;
+        text-align: right;
+        margin-right: 10px;
+        padding-right: 10px;
+    }
+
+    .about, .work, .contact {
+        display: flex;
+    }
+
+    .about div, .projects, .contact ul {
         width: 75%;
+    }
+
+    .projects {
         flex-direction: row;
         justify-content: space-around;
     }
